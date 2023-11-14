@@ -10,6 +10,13 @@
 # Individual comments for below tables are unnecessary, as they are explained here:
 # Character lengths have been set according to length of data elements. There are 7 characters in 'emp_no', even though there are currently only 5 or 6 characters. 7 allows for room to grow, wothout needing to alter table.
 
+# NB: The instructor uses integers as the type for any ID. This is erroneous because ** NO ONE ** performs mathematical functions on an ID/
+# An integer is for mathematical operations, and not all ID's are numeric.
+# By using an integer for an ID, one can perform a function like 'emp_no' * 10 - 47. By using an integer, a value would be returned.
+# As a Senior Product Analyst with ten years experience at Apple, Inc. in Cupertino, CA, I can definitively
+# Say that that Apple never uses 'Integer' as a type for any type ID.
+
+
 
 
 create table titles (
